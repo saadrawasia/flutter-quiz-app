@@ -30,7 +30,7 @@ class _QuestionsScreen extends State<QuestionsScreen> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
-            ...currentQuestion.answers.map((answer) {
+            ...currentQuestion.getShuffledAnswers().map((answer) {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
